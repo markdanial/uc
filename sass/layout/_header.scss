@@ -1,0 +1,23 @@
+.header {
+	width:100%;
+	position: relative;
+	padding:40px 0;
+	
+	.logo-wrapper {
+		position: relative;
+		width:30%;
+	
+		.h1 {
+			font-size: 2rem;
+			float: left;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		.logo	{
+			float: left;
+			padding-right: 20px;
+		}
+	}
+}

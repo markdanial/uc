@@ -1,0 +1,13 @@
+.slice-table {
+	display: table;
+
+	.table-fixed {
+		table-layout: fixed;
+	}
+
+	.slice-item {
+		width: auto;
+		display: table-cell;
+		vertical-align: top;
+	}
+}
