@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<title>UC Challenge</title>
 	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 	<div id="container">
 		<div class="wrapper">
 
 			<!-- header -->
-			<header class="header clearfix">
+			<header class="header cf">
 				<div class="left logo-wrapper">
 					<div class="logo">
 						<img src="img/logo.png" alt="">
@@ -47,7 +48,7 @@
 
 			<!-- main -->
 			<main>
-				<div class="slice-table table-fixed full">
+				<div class="slice slice-3col">
 
 					<!-- sidebar -->
 					<aside class="sidebar slice-item">
@@ -74,15 +75,24 @@
 					</aside>
 
 					<!-- main content -->
-					<section class="slice-item">
+					<section class="slice-item-wide">
 						<h2>Quibusdam aperiam dolorum minima nobis hic aliquam facilis laborum eaque inventore</h2>
 
 						<!-- carousel -->
-						<section class="carousel">
-							<img src="img/1.jpg" alt="">
-							<img src="img/2.jpg" alt="">
-							<img src="img/3.jpg" alt="">
+						<section class="flexslider">
+							<ul class="slides">
+							   <li>
+							      <img src="img/1.jpg" alt="1" />
+							   </li>
+							   <li>
+							      <img src="img/2.jpg" alt="2" />
+							   </li>						   
+							   <li>
+							      <img src="img/3.jpg" alt="2" />
+							   </li>
+							</ul>
 						</section>
+
 						<h3>Quibusdam aperiam dolorum minima nobis hic aliquam facilis</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae provident mollitia praesentium itaque et voluptatibus asperiores temporibus a dolorem, quisquam tempore sapiente ipsam quasi neque blanditiis dicta ullam ab nisi!</p>
 						<h4>Quibusdam aperiam dolorum minima nobis hic aliquam facilis</h4>
@@ -92,7 +102,7 @@
 			</main>
 			
 			<!-- footer -->
-			<footer class="clearfix">
+			<footer class="cf">
 				<ul class="nav nav-footer">
 					<li class="nav-item"><a href="">Footer Links</a></li>
 					<li class="nav-item"><a href="">University of California</a></li>
@@ -108,5 +118,7 @@
 
 		</div>
 	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
 </body>
 </html>
