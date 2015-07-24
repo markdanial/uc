@@ -1,18 +1,18 @@
 .header {
 	width:100%;
 	position: relative;
-	padding:40px 0;
+	padding:40px 0 30px;
 	
 	.logo-wrapper {
 		position: relative;
-		width:30%;
+		width:28%;
 	
 		.h1 {
-			font-size: 2rem;
 			float: left;
 			position: absolute;
 			bottom: 0;
 			right: 0;
+			color: $blue;
 		}
 
 		.logo	{

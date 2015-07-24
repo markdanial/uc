@@ -6,12 +6,15 @@
 /* reset */
 @import "compass/reset";
 
-/* base */
-@import "base/base";
-
 /* tools */
 @import "tools/helpers";
 @import "tools/site-settings";
+@import "tools/fonts";
+
+/* base */
+@import "base/base";
+@import "base/headers";
+@import "base/paragraph";
 
 /* layout */
 @import "layout/container";
@@ -22,3 +25,5 @@
 @import "layout/main";
 @import "layout/slice";
 @import "layout/slider";
+@import "layout/sidebar";
+@import "layout/module";

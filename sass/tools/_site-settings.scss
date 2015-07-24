@@ -1,11 +1,17 @@
 // global breaks
 $small-screen-break: 320px;
-
 $small-landscape-break: 480px;
-
 $mobile-break: 640px;
 $tablet-small-break: $mobile-break;
 $tablet-break: 768px;
 $tablet-landscape-break: 800px;
 $medium-screen-break: 960px;
 $large-screen-break: 1280px;
+
+// color vars
+$blue: #00517e;
+$gray: #f2f0ee;
+$dark-gray: #333333;
+$pink: #e44b9a;
+$yellow: #ffb50f;
+$green: #00a3ad;

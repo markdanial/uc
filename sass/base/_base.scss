@@ -3,11 +3,17 @@
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Kievit", Arial, Helvetica, sans-serif;
 }
 
 a {
 	text-decoration: none;
+	color: $blue;
+	transition: color 0.3s;
+
+	&:hover {
+		color:black;
+	}
 }
 
 ::selection {
