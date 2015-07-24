@@ -1,0 +1,63 @@
+#search {
+	border: none;
+	border-bottom: 1px solid #00517e;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+
+	font-size: 15px;
+	font-family: "Kievit";
+
+	width: 200px;
+
+	position:relative;
+	background-color:white;
+	background:url(../img/mag.png) right center no-repeat;
+	background-size:14px;
+
+	&:focus {
+		outline:none;
+	}
+}
+input::-webkit-input-placeholder {
+   color: $blue;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: $blue;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: $blue;
+}
+
+input:-ms-input-placeholder {  
+    color: $blue;
+}
+
+/*
+* On focus
+*/
+// Placeholder animation stuff (for all inputs)
+
+@mixin placeholder-animation {
+	transition-property: all;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+  	
+  	opacity: 0;
+    background-color:$gray;	
+   	text-indent: -100%;
+}
+
+*:focus::-webkit-input-placeholder { /* WebKit browsers */
+	@include placeholder-animation;
+}
+*:focus::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    @include placeholder-animation;
+}
+*:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+    @include placeholder-animation;
+}
+*:focus::-ms-input-placeholder { /* Internet Explorer 10+ */
+    @include placeholder-animation;
+}

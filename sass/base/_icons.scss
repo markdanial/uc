@@ -1,0 +1,31 @@
+.icon-wrapper {
+	height:40px;
+	width: 100%;
+	
+	.icon {
+		height: 35px;
+		width: 35px;
+		display: inline-block;
+		margin:2px;
+		float: right;
+
+		&.icon-twitter {
+			background: url(../img/twitter.png) center no-repeat;
+			
+			&:hover {
+				background: url(../img/twitter-hover.png) center no-repeat;
+			}
+		}
+		&.icon-facebook {
+			background: url(../img/facebook.png) center no-repeat;
+
+			&:hover {
+				background: url(../img/facebook-hover.png) center no-repeat;
+			}
+		}
+
+		@include mobile {
+			float: none;
+		}
+	}
+}

@@ -47,3 +47,27 @@
   		width: 100% / 5 * 2;
   }
 }
+
+@media only screen and (max-width:$mobile-break) {
+	.slice {
+		display: -webkit-flex;
+	    display: flex;
+	    -webkit-flex-flow: column wrap;
+	    flex-flow: column wrap;
+	}
+	.slice-3col {
+	  & > .slice-item {
+			width: 100%;
+			float: left;
+			-webkit-flex: 1 auto;
+    		flex: 1 auto;
+    		order: 1;
+		}
+	  & > .slice-item-wide {
+	  		width: 100%;
+	  		float: left;
+	  		-webkit-flex: 1 auto;
+    		flex: 1 auto;
+	  }
+	}
+}

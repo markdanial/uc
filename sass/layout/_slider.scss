@@ -79,10 +79,18 @@ html[xmlns] .flexslider .slides {
   position: relative;
   zoom: 1;
   margin: 20px 0 30px;
+
+  .h5 {
+    float: right;
+
+    @include mobile {
+      float: left;
+    }
+  }
 }
 .flexslider .slides {
   zoom: 1;
-  height: 350px;
+  max-height: 350px;
   overflow: hidden;
 }
 .flexslider .slides img {
